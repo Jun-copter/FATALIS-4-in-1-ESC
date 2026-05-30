@@ -1,0 +1,36 @@
+# KiCad lock files (created while project is open)
+*.lck
+
+# KiCad local settings (window positions, layer visibility, etc.)
+*.kicad_prl
+
+# KiCad auto-backups
+*-backups/
+
+# KiCad auto-save
+_autosave-*
+
+# KiCad footprint cache
+fp-info-cache
+
+# Gerber / fabrication output
+gerbers/
+fab/
+plot/
+*.gbr
+*.drl
+*.dxf
+*.pdf
+*.svg
+*.pos
+*.rpt
+*.xml
+*.csv
+
+# Python cache (from KiCad scripting or easyeda2kicad)
+__pycache__/
+*.pyc
+
+# Windows
+Thumbs.db
+desktop.ini

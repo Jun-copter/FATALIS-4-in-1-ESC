@@ -434,7 +434,7 @@
         "uuid": "885456b2-b92d-459f-a061-5f970a420f96"
       }
     ],
-    "used_designators": "U1-12,H1-2,R1-62,J1-8,#PWR1-15,Q1-28,GND_BAT1-37,C1-20",
+    "used_designators": "C17-28,GND_BAT34-41,R63-66,D1-4,#PWR3,#PWR16-32,U10-11,TP1-12",
     "variants": []
   },
   "sheets": [
@@ -477,6 +477,10 @@
     [
       "457d46ee-1ba6-4461-b869-a7aba5bddf93",
       "CURRENT_VOLTAGE_SENSE"
+    ],
+    [
+      "d2328bdd-1cef-4230-98f7-ffdd8d70ee2d",
+      "9V DCDC"
     ]
   ],
   "text_variables": {},

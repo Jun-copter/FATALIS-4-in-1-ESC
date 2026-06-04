@@ -3531,6 +3531,52 @@
 			)
 		)
 	)
+	(sheet
+		(at 132.08 78.74)
+		(size 27.94 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d2328bdd-1cef-4230-98f7-ffdd8d70ee2d")
+		(property "Sheetname" "9V DCDC"
+			(at 132.08 78.0284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "9V_BUCK.kicad_sch"
+			(at 132.08 93.2946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(page "11")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

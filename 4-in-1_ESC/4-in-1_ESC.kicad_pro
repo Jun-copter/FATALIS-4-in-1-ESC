@@ -714,7 +714,7 @@
         "uuid": "885456b2-b92d-459f-a061-5f970a420f96"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R45-46,R48-49,R51,R61,R64-65,R67-68,R70,R82,R87-107,#PWR104,#PWR106-108,D13-16,GND65-72,TH1-4",
     "variants": []
   },
   "sheets": [
@@ -756,7 +756,7 @@
     ],
     [
       "d2328bdd-1cef-4230-98f7-ffdd8d70ee2d",
-      "DCDC Power Conversion"
+      "10V BUCK & 3V3 LDO"
     ]
   ],
   "text_variables": {},

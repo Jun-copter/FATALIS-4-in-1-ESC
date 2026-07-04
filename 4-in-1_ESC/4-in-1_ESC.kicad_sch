@@ -1965,6 +1965,26 @@
 		)
 		(uuid "56be9f6b-0331-495b-b972-ae4b6a78610b")
 	)
+	(text_box "Change current output rating for buck, smaller LDO"
+		(exclude_from_sim no)
+		(at 138.43 15.24 0)
+		(size 96.52 29.21)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a3cbf9e1-4236-4aa7-911a-ceeb7dfe36dd")
+	)
 	(text_box "Resolution:\nADC step size = 3.3V / 4096 = 0.806mV per step\nAmplifier Sensitivity = 0.00025Ω × 50 = 12.5mV per amp\n=> ADC step = 0.806mV / 12.5mV/A = 64.5mA per step (resolution)"
 		(exclude_from_sim no)
 		(at 261.62 40.9339 0)
@@ -2309,6 +2329,18 @@
 		(color 0 0 0 0)
 		(uuid "fd0cfc8f-a5ed-454e-bc07-a649e61257b0")
 	)
+	(no_connect
+		(at 151.13 121.92)
+		(uuid "462353f2-fc1b-45f6-b119-f53dc57424fc")
+	)
+	(no_connect
+		(at 151.13 190.5)
+		(uuid "4d105ec9-b338-462b-bf2d-b6c14fff0b96")
+	)
+	(no_connect
+		(at 265.43 190.5)
+		(uuid "fe886b6d-2433-4745-914b-916018359914")
+	)
 	(bus_entry
 		(at 209.55 224.79)
 		(size 2.54 2.54)
@@ -2635,16 +2667,6 @@
 			(color 255 153 0 1)
 		)
 		(uuid "0e251864-2835-4c00-96a2-5d0a5bba0da3")
-	)
-	(bus
-		(pts
-			(xy 251.46 140.97) (xy 251.46 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e4f29ac-153f-4d9b-bbcf-da9ea9945d7f")
 	)
 	(wire
 		(pts
@@ -3120,6 +3142,16 @@
 		)
 		(uuid "306383c1-0957-4a59-bdbc-e4ed6f84a527")
 	)
+	(bus
+		(pts
+			(xy 166.37 140.97) (xy 166.37 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3074b145-c232-4f3a-93fd-8c89846e36b9")
+	)
 	(wire
 		(pts
 			(xy 123.19 59.69) (xy 114.3 59.69)
@@ -3159,6 +3191,26 @@
 			(type default)
 		)
 		(uuid "3133f629-19dd-42ce-868a-4cd4e2850424")
+	)
+	(wire
+		(pts
+			(xy 240.03 143.51) (xy 265.43 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3178a13d-d0c8-4ab6-a821-386d2ad320b1")
+	)
+	(wire
+		(pts
+			(xy 162.56 124.46) (xy 151.13 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "323ceff4-6132-4cc9-990a-e51f1439beb9")
 	)
 	(polyline
 		(pts
@@ -3352,6 +3404,16 @@
 		)
 		(uuid "459fbb01-7852-4d34-9f6f-016a031da48d")
 	)
+	(bus
+		(pts
+			(xy 179.07 142.24) (xy 251.46 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47812b18-0c5e-43af-a842-6e61dc392c97")
+	)
 	(wire
 		(pts
 			(xy 95.25 53.34) (xy 95.25 50.8)
@@ -3515,6 +3577,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 187.96) (xy 265.43 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "582d57b4-5808-4dd8-8fbe-b3951d55bcdf")
+	)
+	(wire
+		(pts
 			(xy 191.77 67.31) (xy 191.77 64.77)
 		)
 		(stroke
@@ -3633,6 +3705,16 @@
 			(type default)
 		)
 		(uuid "6a5c45c2-20e1-485b-82fb-c7b04ad5cae1")
+	)
+	(bus
+		(pts
+			(xy 251.46 140.97) (xy 251.46 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6be3f712-1649-4c3e-a15a-71f2c8e24bbd")
 	)
 	(polyline
 		(pts
@@ -3909,6 +3991,16 @@
 		)
 		(uuid "8f931f58-3200-48d5-86c4-b4564833fe1a")
 	)
+	(wire
+		(pts
+			(xy 162.56 187.96) (xy 151.13 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90826f52-5373-4731-adc1-1826eff4121e")
+	)
 	(bus
 		(pts
 			(xy 209.55 217.17) (xy 195.58 217.17)
@@ -3921,7 +4013,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 252.73) (xy 172.72 252.73)
+			(xy 171.45 252.73) (xy 173.99 252.73)
 		)
 		(stroke
 			(width 0)
@@ -4179,6 +4271,16 @@
 		)
 		(uuid "af7acdae-a324-4f87-898a-e4f99ea5037e")
 	)
+	(wire
+		(pts
+			(xy 240.03 134.62) (xy 240.03 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af972af8-0c57-4f61-bc32-e8b0e0be9c4b")
+	)
 	(polyline
 		(pts
 			(xy 102.87 152.4) (xy 57.15 152.4)
@@ -4189,16 +4291,6 @@
 			(color 255 153 0 1)
 		)
 		(uuid "af9f2fcc-26f6-455d-ab7b-c57e283c3597")
-	)
-	(bus
-		(pts
-			(xy 166.37 140.97) (xy 166.37 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b12eeef2-d566-4a01-b4b2-b1a2c7d91915")
 	)
 	(wire
 		(pts
@@ -4430,16 +4522,6 @@
 			(color 255 153 0 1)
 		)
 		(uuid "c2226d2d-8ca0-4dac-8fed-7659eb1646d5")
-	)
-	(wire
-		(pts
-			(xy 254 143.51) (xy 265.43 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2864532-1761-48da-8050-b3c341b3db80")
 	)
 	(wire
 		(pts
@@ -4734,6 +4816,16 @@
 		)
 		(uuid "de45259b-1271-4653-81e5-a3719270c9ea")
 	)
+	(bus
+		(pts
+			(xy 93.98 143.51) (xy 166.37 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deae893d-86c6-4712-81bc-7b24b3796683")
+	)
 	(wire
 		(pts
 			(xy 229.87 229.87) (xy 251.46 229.87)
@@ -4774,6 +4866,16 @@
 			(type default)
 		)
 		(uuid "e0c996ca-630e-4946-b0bb-37ab45c99215")
+	)
+	(wire
+		(pts
+			(xy 151.13 134.62) (xy 151.13 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2269902-0473-442b-b1a5-1bfb32807ef0")
 	)
 	(wire
 		(pts
@@ -5813,6 +5915,16 @@
 			"kTeDGgXWdEXo1FR0Wxger1PqIikgIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiID//Z"
 		)
 	)
+	(label "KISS_TELEM"
+		(at 162.56 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0434eb94-94be-4db5-8049-aa1db5d06e98")
+	)
 	(label "DSHOT_M4"
 		(at 162.56 143.51 180)
 		(effects
@@ -5832,6 +5944,16 @@
 			(justify right bottom)
 		)
 		(uuid "063164c2-b30d-40ef-90d6-7c84bfb23def")
+	)
+	(label "KISS_TELEM"
+		(at 254 187.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "13f60992-c451-4e65-98e5-cc5cf58d8986")
 	)
 	(label "DSHOT_M1"
 		(at 254 143.51 0)
@@ -6073,6 +6195,16 @@
 		)
 		(uuid "bea55a56-3ed2-48ca-9502-9c3beb3b22ef")
 	)
+	(label "KISS_TELEM"
+		(at 162.56 187.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c811e2e4-8d9b-435e-b199-7baf9b63a5ac")
+	)
 	(label "SWDIO_M3"
 		(at 162.56 185.42 180)
 		(effects
@@ -6152,6 +6284,85 @@
 			(justify right bottom)
 		)
 		(uuid "fecf052b-2fc3-4936-add1-75cd714790fc")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 351.79 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0123ef6f-0965-4669-bbb2-2cad5b3deb90")
+		(property "Reference" "H5"
+			(at 354.33 39.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 354.33 41.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 351.79 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 351.79 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e3dc166-f25b-4281-9365-94b0c76a350a")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -6236,6 +6447,164 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 351.79 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "178d8d17-1dd6-4b55-9eec-2afef94a4e04")
+		(property "Reference" "H6"
+			(at 354.33 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 354.33 55.8799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 351.79 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 351.79 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b26dc143-5d2d-4feb-95e1-d657d77d5344")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 377.19 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1881dd45-df48-4084-be83-e3147b228748")
+		(property "Reference" "H7"
+			(at 379.73 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 379.73 55.8799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 377.19 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 377.19 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 377.19 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ca9679ac-b9de-4063-b59a-02ff65d22fee")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "H7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 248.92 69.85 0)
 		(unit 1)
@@ -6311,89 +6680,6 @@
 			(project "4-in-1_ESC"
 				(path "/885456b2-b92d-459f-a061-5f970a420f96"
 					(reference "R81")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:BLDC_Solder_Pads")
-		(at 340.36 175.26 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1bb7e185-72f6-4351-9b2e-2db7278f8af6")
-		(property "Reference" "J4"
-			(at 353.314 172.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BLDC Solder Pads"
-			(at 345.948 200.914 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 340.36 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 340.36 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 340.36 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ce1e4a04-ef2e-4ffe-8e8b-cbba22e40916")
-		)
-		(pin "1"
-			(uuid "83bf9f84-ef3c-48bc-b3fa-5bcded12917b")
-		)
-		(pin "3"
-			(uuid "e3ed4390-5404-4de6-beac-a5475272cdc6")
-		)
-		(instances
-			(project "4-in-1_ESC"
-				(path "/885456b2-b92d-459f-a061-5f970a420f96"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -6592,7 +6878,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 265.43 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6656,8 +6942,8 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -6976,7 +7262,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "easyeda_import:3_Phase_Solder_Pads"
 			(at 76.2 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -7101,6 +7387,162 @@
 			(project "4-in-1_ESC"
 				(path "/885456b2-b92d-459f-a061-5f970a420f96"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 377.19 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "356a922e-891c-4b24-aa44-43f436a164a0")
+		(property "Reference" "GND078"
+			(at 377.19 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 377.19 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 377.19 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 377.19 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 377.19 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3285d8e1-f388-4f02-8919-dc373af235a2")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "GND078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 351.79 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38657898-5212-4a80-bdf3-d2ba0b0290a4")
+		(property "Reference" "GND079"
+			(at 351.79 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 351.79 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 351.79 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 351.79 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6075cc68-3a12-46cd-8e17-0a9e67017297")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "GND079")
 					(unit 1)
 				)
 			)
@@ -7550,7 +7992,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 318.77 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -7609,95 +8051,13 @@
 		)
 	)
 	(symbol
-		(lib_id "custom_symbols:BLDC_Solder_Pads")
-		(at 76.2 175.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "41412a7c-70e3-4005-83f4-5150e015a4fb")
-		(property "Reference" "J2"
-			(at 63.246 172.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BLDC Solder Pads"
-			(at 70.612 200.914 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "03298e74-eae3-40bb-8548-c69066d58fe2")
-		)
-		(pin "1"
-			(uuid "ee87ca0f-db85-41be-98e9-9ceebcff54e4")
-		)
-		(pin "3"
-			(uuid "b1d581e4-720f-473d-acbc-228faa12f61c")
-		)
-		(instances
-			(project "4-in-1_ESC"
-				(path "/885456b2-b92d-459f-a061-5f970a420f96"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 142.24 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -7713,7 +8073,7 @@
 				)
 			)
 		)
-		(property "Value" "GND_BAT"
+		(property "Value" "GND"
 			(at 142.24 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7763,6 +8123,89 @@
 			(project "4-in-1_ESC"
 				(path "/885456b2-b92d-459f-a061-5f970a420f96"
 					(reference "GND_BAT01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "custom_symbols:BLDC_Solder_Pads")
+		(at 340.36 119.38 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "49895b6e-3b68-4963-bacf-b08bd2b21e61")
+		(property "Reference" "J3"
+			(at 353.314 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BLDC Solder Pads"
+			(at 345.948 145.034 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda_import:3_Phase_Solder_Pads"
+			(at 340.36 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 340.36 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 340.36 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b6af7def-4704-434d-a54d-737d8434f2f9")
+		)
+		(pin "1"
+			(uuid "0f337302-61e7-407f-81e7-9934f08b61a8")
+		)
+		(pin "3"
+			(uuid "f0401541-3b43-46fe-bbc4-210f5bdf84c1")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -8174,6 +8617,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 351.79 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a7eb7e0-c86e-46ab-947e-33a5c9232f71")
+		(property "Reference" "GND077"
+			(at 351.79 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 351.79 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 351.79 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 351.79 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3710705e-b609-4a62-b7e3-777824602c0f")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "GND077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 241.3 72.39 0)
 		(unit 1)
@@ -8520,7 +9041,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 255.27 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8804,8 +9325,8 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9041,6 +9562,89 @@
 		)
 	)
 	(symbol
+		(lib_id "custom_symbols:BLDC_Solder_Pads")
+		(at 340.36 175.26 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91035d37-1522-4930-a47d-887e0286eba4")
+		(property "Reference" "J4"
+			(at 353.314 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BLDC Solder Pads"
+			(at 345.948 200.914 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda_import:3_Phase_Solder_Pads"
+			(at 340.36 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 340.36 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 340.36 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c2fc69e5-f819-4193-aab7-183742afe1c6")
+		)
+		(pin "1"
+			(uuid "7206edcd-f504-4438-8c8f-1368e30d6e94")
+		)
+		(pin "3"
+			(uuid "645348cd-47e3-425d-aa9a-a81d6fb90a63")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 104.14 55.88 0)
 		(unit 1)
@@ -9123,6 +9727,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 377.19 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9abca7a1-b4a8-4e11-901a-48b25e3e3bee")
+		(property "Reference" "H4"
+			(at 379.73 39.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 379.73 41.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 377.19 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 377.19 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 377.19 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9eebe497-3883-4a54-be3b-c41fb392da87")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 81.28 49.53 0)
 		(unit 1)
@@ -9194,89 +9877,6 @@
 			(project "4-in-1_ESC"
 				(path "/885456b2-b92d-459f-a061-5f970a420f96"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:BLDC_Solder_Pads")
-		(at 340.36 119.38 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a4ec9feb-fb01-4746-ae3a-9bef9086975d")
-		(property "Reference" "J3"
-			(at 353.314 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BLDC Solder Pads"
-			(at 345.948 145.034 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 340.36 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 340.36 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 340.36 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "36efec27-8b7f-41d3-8311-7bd0492d161f")
-		)
-		(pin "1"
-			(uuid "7449e05f-d207-42b6-b6ea-d37fbae82110")
-		)
-		(pin "3"
-			(uuid "ad798c91-0d3f-4003-a5a8-8672af195099")
-		)
-		(instances
-			(project "4-in-1_ESC"
-				(path "/885456b2-b92d-459f-a061-5f970a420f96"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9452,8 +10052,8 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9530,8 +10130,8 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10212,8 +10812,8 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10279,6 +10879,84 @@
 			(project "4-in-1_ESC"
 				(path "/885456b2-b92d-459f-a061-5f970a420f96"
 					(reference "GND064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 377.19 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed8dc0dc-3a1f-4647-b7fd-e5d142433a6b")
+		(property "Reference" "GND080"
+			(at 377.19 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 377.19 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 377.19 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 377.19 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 377.19 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c80c0280-ab48-4ffa-95d2-f6e6cfa21673")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "GND080")
 					(unit 1)
 				)
 			)
@@ -10367,13 +11045,95 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 318.77 77.47 0)
+		(lib_id "custom_symbols:BLDC_Solder_Pads")
+		(at 76.2 175.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f5bbfcc8-be9b-4e8f-a0d5-b7bd5975ddb1")
+		(property "Reference" "J2"
+			(at 63.246 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BLDC Solder Pads"
+			(at 70.612 200.914 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda_import:3_Phase_Solder_Pads"
+			(at 76.2 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c94e9a55-775c-4dc9-b494-ea0759441451")
+		)
+		(pin "1"
+			(uuid "e443a52f-e73a-4968-89d2-72da27395426")
+		)
+		(pin "3"
+			(uuid "7bb9b922-8f46-4dc8-844f-e2efe055f4f0")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 318.77 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10614,8 +11374,8 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fbaed527-2eee-4b85-b068-ca78f3b6a84f")
@@ -10882,6 +11642,26 @@
 		(pin "SWDIO" output
 			(at 265.43 185.42 180)
 			(uuid "893d6fc1-bb41-493f-a7ec-60e089905535")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CURRENT_SENSE" output
+			(at 265.43 190.5 180)
+			(uuid "7cfcc76b-15ec-44d9-b248-ba997b0d88c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "KISS_TELEM" output
+			(at 265.43 187.96 180)
+			(uuid "9297b731-ab2c-4cbb-8519-7102597bb3b7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11227,6 +12007,26 @@
 				(justify right)
 			)
 		)
+		(pin "CURRENT_SENSE" output
+			(at 151.13 121.92 0)
+			(uuid "df9ab87e-5525-4eb6-bead-7bbc7cc0f2c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KISS_TELEM" output
+			(at 151.13 124.46 0)
+			(uuid "d309a160-12c0-44a5-869f-77af221ba0a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "4-in-1_ESC"
 				(path "/885456b2-b92d-459f-a061-5f970a420f96"
@@ -11432,6 +12232,26 @@
 		(pin "SWDIO" output
 			(at 151.13 185.42 0)
 			(uuid "ef12c123-b05f-4c97-8c3c-18ce299b5b34")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CURRENT_SENSE" output
+			(at 151.13 190.5 0)
+			(uuid "c328e2f1-2818-4137-ad22-8b6a80eb3bef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KISS_TELEM" output
+			(at 151.13 187.96 0)
+			(uuid "8bf8e4b9-439c-4ae0-953a-dad8a6080be2")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -670,8 +670,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "Footprint"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -714,7 +714,7 @@
         "uuid": "885456b2-b92d-459f-a061-5f970a420f96"
       }
     ],
-    "used_designators": "R45-46,R48-49,R51,R61,R64-65,R67-68,R70,R82,R87-107,#PWR104,#PWR106-108,D13-16,GND65-72,TH1-4",
+    "used_designators": "GND73-80,H1,H4-7,J2-4,R108-115",
     "variants": []
   },
   "sheets": [

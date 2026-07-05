@@ -2226,6 +2226,28 @@
 		)
 		(uuid "c1168fdd-f6fa-468b-b2a7-9539b5949eac")
 	)
+	(text_box "SMALLER DIODES"
+		(exclude_from_sim no)
+		(at 260.35 140.97 0)
+		(size 33.02 10.0806)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 229 191 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "e5970874-9ab5-436f-8b39-476646d74f7c")
+	)
 	(junction
 		(at 167.64 92.71)
 		(diameter 0)

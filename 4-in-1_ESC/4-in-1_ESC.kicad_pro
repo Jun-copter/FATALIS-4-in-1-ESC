@@ -714,7 +714,7 @@
         "uuid": "885456b2-b92d-459f-a061-5f970a420f96"
       }
     ],
-    "used_designators": "GND73-80,H1,H4-7,J2-4,R108-115",
+    "used_designators": "GND73-80,H1,H4-7,J2-5,R108-120,U8,#PWR109",
     "variants": []
   },
   "sheets": [

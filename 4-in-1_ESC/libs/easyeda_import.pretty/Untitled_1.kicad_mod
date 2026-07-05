@@ -1,4 +1,4 @@
-(footprint "Untitled"
+(footprint "Untitled_1"
 	(version 20260206)
 	(generator "pcbnew")
 	(generator_version "10.0")
@@ -7,7 +7,7 @@
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "5f13df10-baf3-41f6-a2f0-34d85b769b1c")
+		(uuid "3c745540-bbd7-4ea8-b7c1-0ac723f3471f")
 		(effects
 			(font
 				(size 1 1)
@@ -15,11 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "Untitled"
+	(property "Value" "Untitled_1"
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "51c5a96c-d9a9-44a5-b6d3-a9e4efa23d18")
+		(uuid "65e2bbd9-4b11-4493-a03f-15c7032a89d1")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "875776c1-fc09-4efc-b15c-39cba4453304")
+		(uuid "3497713f-9de6-4d33-9630-078dddf9aedc")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d2449aed-e0f8-4324-86fb-0ab40aeffc45")
+		(uuid "c44de1d9-7526-4dd9-b468-e584f2738a6c")
 		(effects
 			(font
 				(size 1 1)
@@ -59,7 +59,7 @@
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "f9e08422-7b57-49dc-8172-65d07c8e8b5c")
+		(uuid "c980cc10-f45b-4443-9ef1-0322d6f3e391")
 		(effects
 			(font
 				(size 1 1)

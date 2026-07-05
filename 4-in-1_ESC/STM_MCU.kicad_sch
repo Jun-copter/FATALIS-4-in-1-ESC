@@ -2061,6 +2061,28 @@
 		)
 		(uuid "c1b4e933-caa1-4623-93f7-97a7f87dda4e")
 	)
+	(text_box "VERIFY THIS^^"
+		(exclude_from_sim no)
+		(at 45.72 142.24 0)
+		(size 33.02 10.0806)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 229 191 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "5440a5df-bed5-416a-a6ec-656907c94c29")
+	)
 	(text_box "SIGNALS & SENSORS\nPin     Function           Signal\nPA2     TIM2_CH3 (AF2)     DShot RX ← FC\nPA2     USART2_TX (AF1)    BDShot TX → FC (runtime switch)\nPA0     ADC_IN0            Phase current (shunt amp)\nPA1     ADC_IN1            Battery voltage (divider)\nPA4     ADC_IN4            NTC temperature\nPB6     USART1_TX (AF0)    Telemetry → FC\nPA13    SWDIO (AF0)        Debug probe\nPA14    SWCLK (AF0)        Debug probe"
 		(exclude_from_sim no)
 		(at 36.83 118.11 0)
@@ -2100,6 +2122,28 @@
 			(justify left top)
 		)
 		(uuid "c9af55b7-d695-4b07-a8d4-e819c7edb4fd")
+	)
+	(text_box "PICK COMPONENT"
+		(exclude_from_sim no)
+		(at 237.49 53.4194 0)
+		(size 33.02 10.0806)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 229 191 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "e2cbc61c-1fc6-47f1-9aa5-02cedca1a22c")
 	)
 	(junction
 		(at 160.02 64.77)
@@ -2271,16 +2315,6 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 106.68) (xy 224.79 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05ece870-906f-4c3a-af34-571ec7260a29")
-	)
-	(wire
-		(pts
 			(xy 119.38 59.69) (xy 129.54 59.69)
 		)
 		(stroke
@@ -2341,7 +2375,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 111.76) (xy 217.17 111.76)
+			(xy 207.01 111.76) (xy 215.9 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2391,7 +2425,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 123.19) (xy 213.36 123.19)
+			(xy 207.01 123.19) (xy 215.9 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2811,7 +2845,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 120.65) (xy 213.36 120.65)
+			(xy 207.01 120.65) (xy 215.9 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2831,7 +2865,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 106.68) (xy 217.17 106.68)
+			(xy 207.01 106.68) (xy 215.9 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2848,16 +2882,6 @@
 			(type default)
 		)
 		(uuid "daeb64d0-2ef6-4708-932f-e3ade5f5ada7")
-	)
-	(wire
-		(pts
-			(xy 222.25 111.76) (xy 224.79 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df3dc7b2-9288-4b3a-8a0d-c46c6712a863")
 	)
 	(wire
 		(pts
@@ -4935,7 +4959,7 @@
 	)
 	(hierarchical_label "KISS_TELEM"
 		(shape output)
-		(at 224.79 106.68 0)
+		(at 215.9 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4968,7 +4992,7 @@
 	)
 	(hierarchical_label "SWCLK"
 		(shape output)
-		(at 213.36 120.65 0)
+		(at 215.9 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4979,7 +5003,7 @@
 	)
 	(hierarchical_label "DSHOT_RX"
 		(shape output)
-		(at 224.79 111.76 0)
+		(at 215.9 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5001,7 +5025,7 @@
 	)
 	(hierarchical_label "SWDIO"
 		(shape output)
-		(at 213.36 123.19 0)
+		(at 215.9 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5214,99 +5238,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 219.71 111.76 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0a55c083-167d-4d1f-bf6d-c43f8eed1fad")
-		(property "Reference" "R112"
-			(at 217.424 114.3 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470R"
-			(at 217.424 116.84 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4ab1b67c-eba4-42a5-9325-8c7a79c79cf0")
-		)
-		(pin "1"
-			(uuid "9b5008f3-192e-4995-9302-1316458a610a")
-		)
-		(instances
-			(project "4-in-1_ESC"
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/6564a7b2-a052-4d05-afff-891845561909"
-					(reference "R115")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/773805d5-0506-47cb-968e-b54ab0ee2e7c"
-					(reference "R114")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/77e6c738-31a1-455c-884f-364258be6798"
-					(reference "R113")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/be886d77-ef71-4773-9408-03142af02e9b"
-					(reference "R112")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 160.02 69.85 0)
 		(unit 1)
@@ -5489,99 +5420,6 @@
 				)
 				(path "/885456b2-b92d-459f-a061-5f970a420f96/be886d77-ef71-4773-9408-03142af02e9b"
 					(reference "C71")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 219.71 106.68 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "19de76f8-6a0e-4457-af0d-f370a005098a")
-		(property "Reference" "R108"
-			(at 217.424 101.6 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "470R"
-			(at 217.424 104.14 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 219.71 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 219.71 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 219.71 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "fb2500a5-adbf-4978-a3a2-729df3fc2716")
-		)
-		(pin "1"
-			(uuid "5ce982bb-613c-468e-887c-7d25af92a1a8")
-		)
-		(instances
-			(project "4-in-1_ESC"
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/6564a7b2-a052-4d05-afff-891845561909"
-					(reference "R111")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/773805d5-0506-47cb-968e-b54ab0ee2e7c"
-					(reference "R110")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/77e6c738-31a1-455c-884f-364258be6798"
-					(reference "R109")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/be886d77-ef71-4773-9408-03142af02e9b"
-					(reference "R108")
 					(unit 1)
 				)
 			)

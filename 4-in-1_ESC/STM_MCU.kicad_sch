@@ -2083,6 +2083,26 @@
 		)
 		(uuid "5440a5df-bed5-416a-a6ec-656907c94c29")
 	)
+	(text_box "Temp   R_{NTC}    V_{NTC_TEMP}\n0°C    ~28.2k   ~0.86V\n75°C   ~1.92k   ~2.77V\n125°C  ~545Ω    ~3.13V\n"
+		(exclude_from_sim no)
+		(at 218.44 38.1 0)
+		(size 33.02 10.16)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "671ed0f0-42ea-42bc-8f65-6fecc8e6be4a")
+	)
 	(text_box "SIGNALS & SENSORS\nPin     Function           Signal\nPA2     TIM2_CH3 (AF2)     DShot RX ← FC\nPA2     USART2_TX (AF1)    BDShot TX → FC (runtime switch)\nPA0     ADC_IN0            Phase current (shunt amp)\nPA1     ADC_IN1            Battery voltage (divider)\nPA4     ADC_IN4            NTC temperature\nPB6     USART1_TX (AF0)    Telemetry → FC\nPA13    SWDIO (AF0)        Debug probe\nPA14    SWCLK (AF0)        Debug probe"
 		(exclude_from_sim no)
 		(at 36.83 118.11 0)
@@ -2122,28 +2142,6 @@
 			(justify left top)
 		)
 		(uuid "c9af55b7-d695-4b07-a8d4-e819c7edb4fd")
-	)
-	(text_box "PICK COMPONENT"
-		(exclude_from_sim no)
-		(at 237.49 53.4194 0)
-		(size 33.02 10.0806)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 255 229 191 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 255 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "e2cbc61c-1fc6-47f1-9aa5-02cedca1a22c")
 	)
 	(junction
 		(at 160.02 64.77)
@@ -2352,26 +2350,6 @@
 			(type default)
 		)
 		(uuid "174aa532-cd67-408a-87a0-82a57bd2f88a")
-	)
-	(bus
-		(pts
-			(xy 176.53 140.97) (xy 176.53 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b0c80fa-2cc5-4278-b5c4-2a155ff144c7")
-	)
-	(bus
-		(pts
-			(xy 243.84 142.24) (xy 176.53 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c36df10-9e5c-41ed-8f0f-199fbefd2ef1")
 	)
 	(wire
 		(pts
@@ -2735,7 +2713,7 @@
 	)
 	(bus
 		(pts
-			(xy 166.37 140.97) (xy 166.37 130.81)
+			(xy 166.37 142.24) (xy 166.37 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2775,7 +2753,7 @@
 	)
 	(bus
 		(pts
-			(xy 176.53 140.97) (xy 166.37 140.97)
+			(xy 166.37 142.24) (xy 243.84 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6769,7 +6747,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ 3453K"
+		(property "Value" "10k 3380k"
 			(at 229.87 63.8174 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6780,7 +6758,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 227.33 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6803,6 +6781,17 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor, negative temperature coefficient, US symbol"
+			(at 227.33 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_Part_Number" "C209959"
 			(at 227.33 62.23 0)
 			(hide yes)
 			(show_name no)

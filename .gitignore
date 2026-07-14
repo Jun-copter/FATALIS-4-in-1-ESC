@@ -27,6 +27,9 @@ plot/
 *.xml
 *.csv
 
+# LCSC import script (local tooling, not part of the design source)
+add-lcsc-part.ps1
+
 # Python cache (from KiCad scripting or easyeda2kicad)
 __pycache__/
 *.pyc

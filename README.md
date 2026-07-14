@@ -1,6 +1,6 @@
-# 4-in-1 ESC
+# FATALIS — 4-in-1 ESC
 
-4-in-1 brushless ESC for FPV drones. 40×40mm, 6-layer PCB. 3–8S LiPo (11–33.6V), 60A continuous / 120A burst per motor. STM32G071 + AM32 open-source firmware, DShot/Oneshot/PWM input, KISS telemetry. Sponsored by PCBWay.
+A compact 4-in-1 brushless ESC designed for high-performance FPV racing and freestyle drones. Four independent motor drives on a single 40×40mm 6-layer PCB, each rated 60A continuous / 120A burst, running AM32 open-source firmware on an STM32G071. Sponsored by PCBWay.
 
 ---
 
@@ -24,13 +24,31 @@
 
 ---
 
-## Design Highlights
+## Board Design
 
-- **Power tree:** LMR51610 wide-VIN synchronous buck (up to 33.6V → 10V, 56µH) feeds a TLV76733 LDO for the 3.3V MCU/logic rail.
-- **MOSFETs:** 100V-rated Infineon BSC070N10NS3G with input capacitors derated to ~50% effective capacitance at DC bias.
-- **Gate drive:** JSM6288Q bootstrap half-bridge drivers with per-phase RC snubbers.
-- **Sensing:** Bidirectional current sensing on each motor phase for telemetry and RPM feedback via DShot.
-- **Firmware:** AM32 timer-based protocol auto-detection covers DShot150/300/600, Oneshot, Multishot, and standard PWM.
+### Power Architecture
+
+The input rail accepts 3–8S LiPo (up to 33.6V) and feeds directly into the MOSFET phase bridges. A TI **LMR51610** wide-VIN synchronous buck converter steps the battery voltage down to 10V at 400kHz, sized with a 56µH inductor and 22µF output filter for low ripple. A TI **TLV76733** LDO then regulates the 10V rail to a clean 3.3V supply for the MCUs and logic. Input bulk capacitors are 100V-rated ceramics with capacitance derating analysis applied (~50% effective capacitance at DC bias), ensuring adequate hold-up under the fast transients of motor switching.
+
+### MOSFET Phase Bridges
+
+Each of the four motor drives uses six **Infineon BSC070N10NS3G** N-channel MOSFETs (100V, 7mΩ) arranged in a standard 3-phase half-bridge topology. The 100V rating provides margin above the maximum 33.6V battery voltage, accounting for inductive flyback spikes during hard switching. Gate resistors and RC snubbers suppress ringing on the switch node without significantly degrading switching speed.
+
+### Gate Drive
+
+**JSM6288Q** bootstrap half-bridge gate drivers provide high-current drive capability for fast MOSFET switching, with integrated bootstrap diodes charging the high-side gate supply on each PWM cycle. Bootstrap capacitors are sized to maintain sufficient gate drive voltage across the full duty-cycle range at maximum switching frequency.
+
+### MCU & Firmware
+
+Each motor channel has a dedicated **STM32G071GBU6** (Cortex-M0+, 64MHz) running **AM32** open-source ESC firmware. AM32's timer-based protocol auto-detection supports DShot150/300/600, Oneshot125/42, Multishot, and standard PWM without manual configuration. The STM32G071's advanced timers handle 3-phase complementary PWM generation with configurable dead-time insertion.
+
+### Sensing & Telemetry
+
+A low-side shunt resistor on each motor drive enables per-motor current sensing via the MCU's internal ADC. Battery voltage is monitored through a resistor divider, and an NTC thermistor provides board temperature. All sensor data is transmitted back to the flight controller over bidirectional DShot as KISS/AM32 telemetry frames, providing real-time RPM, current, voltage, and temperature at full loop rates.
+
+### Thermal Design
+
+Power dissipation analysis was performed on both the switching MOSFETs (I²R losses at 60A, 7mΩ) and the LMR51610 buck converter using junction-to-ambient and ψ_JB thermal metrics. The 6-layer PCB provides copper pours on inner layers as a thermal spreader beneath the MOSFETs, and exposed pads on all power packages are soldered directly to the board for minimal thermal resistance.
 
 ---
 
@@ -45,20 +63,7 @@
 | `STM_MCU.kicad_sch` | STM32G071 MCU sub-sheet |
 | `I_V_SENSE.kicad_sch` | Current / voltage sensing sub-sheet |
 | `4-in-1_ESC.kicad_pcb` | PCB layout |
-| `libs/` | Symbols, footprints, 3D models (LCSC imports) |
-| `add-lcsc-part.ps1` | Script to add LCSC components via easyeda2kicad |
-
----
-
-## Adding LCSC Components
-
-Run from the repo root:
-
-```powershell
-.\add-lcsc-part.ps1 -LcscId C529347
-```
-
-Requires `pip install easyeda2kicad`. The script downloads the symbol, footprint, and 3D model, fixes all paths to use `${KIPRJMOD}` (portable), and registers the libraries automatically.
+| `libs/` | Symbols, footprints, and 3D models |
 
 ---
 

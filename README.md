@@ -9,8 +9,8 @@ A compact 4-in-1 brushless ESC designed for high-performance FPV racing and free
 | Parameter | Value |
 |-----------|-------|
 | Input voltage | 3–8S LiPo (11–33.6V) |
-| Continuous current | 60A per motor |
-| Burst current | 120A per motor |
+| Continuous current | 60A per motor (phase current) |
+| Burst current | 120A per motor (phase current) |
 | PCB size | 40mm × 40mm |
 | PCB layers | 6 |
 | MCU | STM32G071GBU6 × 4 (one per motor) |

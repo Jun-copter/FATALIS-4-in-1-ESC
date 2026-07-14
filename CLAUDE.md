@@ -1,10 +1,10 @@
 # 4-in-1 ESC
 
-KiCad project lives in `4-in-1_ESC/`.
+KiCad project files live at the repo root.
 
 ## Adding LCSC components
 
-Run from the `4-in-1_ESC/` directory:
+Run from the repo root:
 
 ```powershell
 .\add-lcsc-part.ps1 -LcscId C529347
@@ -16,7 +16,7 @@ Requires: `pip install easyeda2kicad`
 
 ## Library layout
 
-All LCSC imports share one set of library files inside `4-in-1_ESC/libs/`:
+All LCSC imports share one set of library files inside `libs/`:
 
 | Path | Contains |
 |------|----------|

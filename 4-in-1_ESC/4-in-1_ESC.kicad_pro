@@ -664,6 +664,12 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage Rating",
+          "name": "Voltage Rating",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -714,7 +720,7 @@
         "uuid": "885456b2-b92d-459f-a061-5f970a420f96"
       }
     ],
-    "used_designators": "U1,#PWR4,#PWR66-68,C17,C19-25,C66,C82,C86,C91-100,GND_BAT3,GND_BAT5-7,R1-2,R9-10,R121,NT1",
+    "used_designators": "C95,#PWR92",
     "variants": []
   },
   "sheets": [

@@ -1977,7 +1977,7 @@
 				(size 1.27 1.27)
 				(thickness 0.508)
 				(bold yes)
-				(color 255 255 255 1)
+				(color 255 0 0 1)
 			)
 			(justify left)
 		)
@@ -2028,7 +2028,7 @@
 				(size 2.54 2.54)
 				(thickness 0.508)
 				(bold yes)
-				(color 255 255 255 1)
+				(color 255 0 0 1)
 			)
 			(justify left)
 		)
@@ -2055,33 +2055,11 @@
 				(size 2.54 2.54)
 				(thickness 0.508)
 				(bold yes)
-				(color 255 255 255 1)
+				(color 255 0 0 1)
 			)
 			(justify left)
 		)
 		(uuid "c1b4e933-caa1-4623-93f7-97a7f87dda4e")
-	)
-	(text_box "VERIFY THIS^^"
-		(exclude_from_sim no)
-		(at 45.72 142.24 0)
-		(size 33.02 10.0806)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 255 229 191 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 255 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "5440a5df-bed5-416a-a6ec-656907c94c29")
 	)
 	(text_box "Temp   R_{NTC}    V_{NTC_TEMP}\n0°C    ~28.2k   ~0.86V\n75°C   ~1.92k   ~2.77V\n125°C  ~545Ω    ~3.13V\n"
 		(exclude_from_sim no)
@@ -2122,28 +2100,6 @@
 			(justify left top)
 		)
 		(uuid "770571f1-9d79-4985-8a34-bacc44941137")
-	)
-	(text_box "CHANGE PINOUT FOR ROUTING"
-		(exclude_from_sim no)
-		(at 176.53 146.05 0)
-		(size 33.02 10.0806)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 255 229 191 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 255 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "a65b1b62-0d37-4227-bb3f-267ebdcf564f")
 	)
 	(text_box "MOTOR PWM\nPin     Function           JSM6288Q\nPA8     TIM1_CH1           HIN1 (Phase U ↑)\nPA9     TIM1_CH2           HIN2 (Phase V ↑)\nPA10    TIM1_CH3           HIN3 (Phase W ↑)\nPA7     TIM1_CH1N          LIN1 (Phase U ↓)\nPB0     TIM1_CH2N          LIN2 (Phase V ↓)\nPB1     TIM1_CH3N          LIN3 (Phase W ↓)"
 		(exclude_from_sim no)

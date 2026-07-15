@@ -1,9 +1,15 @@
 # FATALIS — 4-in-1 ESC
 
+> **⚠ Work in Progress** — PCB layout and schematic are still under active development. Not yet sent for fabrication.
+
 <table>
   <tr>
     <td><img src="images/PCB_FRONT.png" alt="PCB 3D render (front)"/></td>
     <td><img src="images/schematics/4-in-1_ESC_page-0001.jpg" alt="Top-level schematic"/></td>
+  </tr>
+  <tr>
+    <td align="center"><em>3D render — in progress, not final</em></td>
+    <td align="center"><em>Top-level schematic</em></td>
   </tr>
 </table>
 

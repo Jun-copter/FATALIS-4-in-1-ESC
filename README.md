@@ -47,7 +47,11 @@ Each motor channel has a dedicated **STM32G071GBU6** (Cortex-M0+, 64MHz) running
 
 ### Sensing & Telemetry
 
-A low-side shunt resistor on each motor drive enables per-motor current sensing via the MCU's internal ADC. Battery voltage is monitored through a resistor divider, and an NTC thermistor provides board temperature. All sensor data is transmitted back to the flight controller over bidirectional DShot as KISS/AM32 telemetry frames, providing real-time RPM, current, voltage, and temperature at full loop rates.
+**Input current sensing** uses two **ASR-M-3-0.5F** (0.5mΩ, 6W, 2512) shunt resistors in parallel on the low side, giving an effective 0.25mΩ shunt rated 12W total. At maximum board input current (180A across all four motors at full throttle), each shunt carries 90A and dissipates 4.05W — within the 6W per-unit rating with comfortable margin. An **INA180A2IDBVR** current sense amplifier (gain = 50V/V) reads the differential voltage across the shunt; at 180A the output is 2.25V, well within the 3.3V ADC rail. Low-side placement keeps the common-mode voltage near 0V, so the INA180A2's 26V common-mode limit is not a concern across the full 3–8S input range.
+
+**Per-motor current sensing** uses a dedicated low-side shunt on each phase leg, read by the STM32G071's internal ADC for real-time per-motor current feedback to AM32 firmware.
+
+Battery voltage is monitored through a resistor divider, and an NTC thermistor on each motor channel provides board temperature. All sensor data is transmitted back to the flight controller over bidirectional DShot as KISS/AM32 telemetry frames, providing real-time RPM, current, voltage, and temperature at full loop rates.
 
 ### Thermal Design
 

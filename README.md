@@ -1,6 +1,11 @@
 # FATALIS — 4-in-1 ESC
 
-![Top-level schematic](images/schematics/4-in-1_ESC_page-0001.jpg)
+<table>
+  <tr>
+    <td><img src="images/PCB_FRONT.png" alt="PCB 3D render (front)"/></td>
+    <td><img src="images/schematics/4-in-1_ESC_page-0001.jpg" alt="Top-level schematic"/></td>
+  </tr>
+</table>
 
 A compact 4-in-1 brushless ESC designed for high-performance FPV racing and freestyle drones. Four independent motor drives on a single 40×40mm 6-layer PCB, each rated 45A continuous / 90A burst per motor, running AM32 open-source firmware on an STM32G071. Sponsored by PCBWay.
 
@@ -62,7 +67,12 @@ Power dissipation analysis was performed on both the switching MOSFETs and the L
 ## Schematics
 
 ### Top-Level Overview
-![Top-level schematic](images/schematics/4-in-1_ESC_page-0001.jpg)
+<table>
+  <tr>
+    <td><img src="images/PCB_FRONT.png" alt="PCB 3D render (front)"/></td>
+    <td><img src="images/schematics/4-in-1_ESC_page-0001.jpg" alt="Top-level schematic"/></td>
+  </tr>
+</table>
 
 ### BLDC Drive — Motor 1
 ![BLDC Drive Motor 1](images/schematics/4-in-1_ESC_page-0002.jpg)

@@ -4,7 +4,7 @@
 
 <table>
   <tr>
-    <td><img src="images/PCB_FRONT.png" alt="PCB 3D render (front)"/></td>
+    <td><img src="images/PCB_FRONT.png" alt="PCB 3D render (front)" width="500"/></td>
     <td><img src="images/schematics/4-in-1_ESC_page-0001.jpg" alt="Top-level schematic"/></td>
   </tr>
   <tr>

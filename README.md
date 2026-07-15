@@ -1,6 +1,6 @@
 # FATALIS — 4-in-1 ESC
 
-A compact 4-in-1 brushless ESC designed for high-performance FPV racing and freestyle drones. Four independent motor drives on a single 40×40mm 6-layer PCB, each rated 60A continuous / 120A burst, running AM32 open-source firmware on an STM32G071. Sponsored by PCBWay.
+A compact 4-in-1 brushless ESC designed for high-performance FPV racing and freestyle drones. Four independent motor drives on a single 40×40mm 6-layer PCB, each rated 45A continuous / 90A burst per motor, running AM32 open-source firmware on an STM32G071. Sponsored by PCBWay.
 
 ---
 
@@ -9,8 +9,9 @@ A compact 4-in-1 brushless ESC designed for high-performance FPV racing and free
 | Parameter | Value |
 |-----------|-------|
 | Input voltage | 3–8S LiPo (11–33.6V) |
-| Continuous current | 60A per motor (phase current) |
-| Burst current | 120A per motor (phase current) |
+| Continuous current | 45A per motor (phase current, with prop-wash airflow) |
+| Burst current | 90A per motor (phase current, <10s) |
+| Max input current | ~160A total board (4 motors at full throttle) |
 | PCB size | 40mm × 40mm |
 | PCB layers | 6 |
 | MCU | STM32G071GBU6 × 4 (one per motor) |
@@ -32,7 +33,7 @@ The input rail accepts 3–8S LiPo (up to 33.6V) and feeds directly into the MOS
 
 ### MOSFET Phase Bridges
 
-Each of the four motor drives uses six **Infineon BSC070N10NS3G** N-channel MOSFETs (100V, 7mΩ) arranged in a standard 3-phase half-bridge topology. The 100V rating provides margin above the maximum 33.6V battery voltage, accounting for inductive flyback spikes during hard switching. Gate resistors and RC snubbers suppress ringing on the switch node without significantly degrading switching speed.
+Each of the four motor drives uses six **Infineon BSC070N10NS3G** N-channel MOSFETs (100V, 7mΩ) arranged in a standard 3-phase half-bridge topology. The 100V rating provides margin above the maximum 33.6V battery voltage, accounting for inductive flyback spikes during hard switching. Gate resistors and RC snubbers suppress ringing on the switch node without significantly degrading switching speed. The continuous current rating is thermally derived: at 45A phase current, conduction losses across the two active MOSFETs (I²×2×R_DS(on)_hot) stay within the thermal budget of the 6-layer copper pours under prop-wash cooling, keeping junction temperature below 125°C with a 50°C ambient.
 
 ### Gate Drive
 
@@ -48,7 +49,7 @@ A low-side shunt resistor on each motor drive enables per-motor current sensing 
 
 ### Thermal Design
 
-Power dissipation analysis was performed on both the switching MOSFETs (I²R losses at 60A, 7mΩ) and the LMR51610 buck converter using junction-to-ambient and ψ_JB thermal metrics. The 6-layer PCB provides copper pours on inner layers as a thermal spreader beneath the MOSFETs, and exposed pads on all power packages are soldered directly to the board for minimal thermal resistance.
+Power dissipation analysis was performed on both the switching MOSFETs and the LMR51610 buck converter using junction-to-ambient and ψ_JB thermal metrics. At 45A continuous, conduction losses per motor (P = I²×2×R_DS(on)_hot ≈ 60W split across 6 MOSFETs) are managed by direct solder of exposed pads to the PCB and inner-layer copper pours acting as a thermal spreader. The 6-layer stackup provides additional thermal mass compared to a 4-layer design.
 
 ---
 

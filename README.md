@@ -1,5 +1,7 @@
 # FATALIS — 4-in-1 ESC
 
+![Top-level schematic](images/schematics/4-in-1_ESC_page-0001.jpg)
+
 A compact 4-in-1 brushless ESC designed for high-performance FPV racing and freestyle drones. Four independent motor drives on a single 40×40mm 6-layer PCB, each rated 45A continuous / 90A burst per motor, running AM32 open-source firmware on an STM32G071. Sponsored by PCBWay.
 
 ---
@@ -53,6 +55,40 @@ Power dissipation analysis was performed on both the switching MOSFETs and the L
 
 ---
 
+## Schematics
+
+### Top-Level Overview
+![Top-level schematic](images/schematics/4-in-1_ESC_page-0001.jpg)
+
+### BLDC Drive — Motor 1
+![BLDC Drive Motor 1](images/schematics/4-in-1_ESC_page-0002.jpg)
+
+### MCU — Motor 1 (STM32G071GBU6)
+![MCU Motor 1](images/schematics/4-in-1_ESC_page-0004.jpg)
+
+### BLDC Drive — Motor 2
+![BLDC Drive Motor 2](images/schematics/4-in-1_ESC_page-0003.jpg)
+
+### MCU — Motor 2 (STM32G071GBU6)
+![MCU Motor 2](images/schematics/4-in-1_ESC_page-0006.jpg)
+
+### BLDC Drive — Motor 3
+![BLDC Drive Motor 3](images/schematics/4-in-1_ESC_page-0005.jpg)
+
+### MCU — Motor 3 (STM32G071GBU6)
+![MCU Motor 3](images/schematics/4-in-1_ESC_page-0008.jpg)
+
+### BLDC Drive — Motor 4
+![BLDC Drive Motor 4](images/schematics/4-in-1_ESC_page-0007.jpg)
+
+### MCU — Motor 4 (STM32G071GBU6)
+![MCU Motor 4](images/schematics/4-in-1_ESC_page-0009.jpg)
+
+### Power Supply — 10V Buck & 3.3V LDO
+![Power Supply](images/schematics/4-in-1_ESC_page-0010.jpg)
+
+---
+
 ## Repository Layout
 
 | File / Folder | Contents |
@@ -65,6 +101,7 @@ Power dissipation analysis was performed on both the switching MOSFETs and the L
 | `I_V_SENSE.kicad_sch` | Current / voltage sensing sub-sheet |
 | `4-in-1_ESC.kicad_pcb` | PCB layout |
 | `libs/` | Symbols, footprints, and 3D models |
+| `images/schematics/` | Schematic export images |
 
 ---
 

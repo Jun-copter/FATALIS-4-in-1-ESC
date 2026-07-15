@@ -67,6 +67,38 @@ Power dissipation analysis was performed on both the switching MOSFETs and the L
 
 ---
 
+## Connectors
+
+### 8-Pin JST — Flight Controller
+
+| Pin | Signal |
+|-----|--------|
+| 1 | VBus |
+| 2 | Current |
+| 3 | Telemetry |
+| 4 | Motor 1 |
+| 5 | Motor 2 |
+| 6 | Motor 3 |
+| 7 | Motor 4 |
+| 8 | Ground |
+
+### 10-Pin JST — Debug / SWD
+
+| Pin | Signal |
+|-----|--------|
+| 1 | +3V3 |
+| 2 | SWDIO M1 |
+| 3 | SWDCLK M1 |
+| 4 | SWDIO M2 |
+| 5 | SWDCLK M2 |
+| 6 | SWDIO M3 |
+| 7 | SWDCLK M3 |
+| 8 | SWDIO M4 |
+| 9 | SWDCLK M4 |
+| 10 | GND |
+
+---
+
 ## Schematics
 
 ### Top-Level Overview

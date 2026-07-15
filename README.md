@@ -2,16 +2,13 @@
 
 > **⚠ Work in Progress** — PCB layout and schematic are still under active development. Not yet sent for fabrication.
 
-<table>
-  <tr>
-    <td><img src="images/PCB_FRONT.png" alt="PCB 3D render (front)" width="500"/></td>
-    <td><img src="images/schematics/4-in-1_ESC_page-0001.jpg" alt="Top-level schematic"/></td>
-  </tr>
-  <tr>
-    <td align="center"><em>3D render — in progress, not final</em></td>
-    <td align="center"><em>Top-level schematic</em></td>
-  </tr>
-</table>
+<img src="images/PCB_FRONT.png" alt="PCB 3D render (front)" width="800"/>
+
+<em>3D render — in progress, not final</em>
+
+<img src="images/schematics/4-in-1_ESC_page-0001.jpg" alt="Top-level schematic" width="800"/>
+
+<em>Top-level schematic</em>
 
 A compact 4-in-1 brushless ESC designed for high-performance FPV racing and freestyle drones. Four independent motor drives on a single 40×40mm 6-layer PCB, each rated 45A continuous / 90A burst per motor, running AM32 open-source firmware on an STM32G071. Sponsored by PCBWay.
 

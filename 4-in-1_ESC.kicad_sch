@@ -911,7 +911,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "easyeda_import:ASR-M-3-0.25F"
+		(symbol "easyeda_import:ASR-M-3-0.5F"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -927,7 +927,7 @@
 					)
 				)
 			)
-			(property "Value" "ASR-M-3-0.25F"
+			(property "Value" "ASR-M-3-0.5F"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -937,7 +937,7 @@
 					)
 				)
 			)
-			(property "Footprint" "easyeda_import:RES-SMD_L6.3-W3.1-1"
+			(property "Footprint" "easyeda_import:RES-SMD_L6.3-W3.2_R2512"
 				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -948,7 +948,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_Shenzhen-Yezhan-Elec-ASR-M-3-0-25F_C495759.html"
+			(property "Datasheet" "https://lcsc.com/product-detail/Low-Resistors-Current-Sense-Resistors-Surface-Mount_Shenzhen-Yezhan-Elec-ASR-M-3-0-5F_C469426.html"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -981,7 +981,7 @@
 					)
 				)
 			)
-			(property "MPN" "ASR-M-3-0.25F"
+			(property "MPN" "ASR-M-3-0.5F"
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -992,7 +992,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C495759"
+			(property "LCSC Part" "C469426"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1014,7 +1014,7 @@
 					)
 				)
 			)
-			(symbol "ASR-M-3-0.25F_0_1"
+			(symbol "ASR-M-3-0.5F_0_1"
 				(rectangle
 					(start -2.54 1.27)
 					(end 2.54 -1.27)
@@ -2760,6 +2760,26 @@
 		)
 		(uuid "61e845d0-b5da-443f-b49b-761d39c7dbe8")
 	)
+	(text_box "Req = 0.25m\nPower rating = 12W"
+		(exclude_from_sim no)
+		(at 210.82 81.6371 0)
+		(size 22.86 5.9929)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a0f8c15b-0dc6-4868-bbce-096afae7a9f5")
+	)
 	(text_box "LPF: fc = 175 Hz (τ ≈ 0.9 ms)\n"
 		(exclude_from_sim no)
 		(at 318.77 77.47 0)
@@ -2791,6 +2811,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1bb1dbc8-4332-4cbb-8ca1-4650a219cfc6")
+	)
+	(junction
+		(at 227.33 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b09afc1-a27d-48de-97e7-3be57beb35b8")
 	)
 	(junction
 		(at 200.66 233.68)
@@ -2829,16 +2855,16 @@
 		(uuid "4ae480c6-5e26-487e-bbb6-50c5e093ff5b")
 	)
 	(junction
-		(at 215.9 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "581933b8-de38-4963-b9a2-8c0fc739b053")
-	)
-	(junction
 		(at 278.13 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64a79d51-3c8b-4fd2-99c4-1bf5fa8160be")
+	)
+	(junction
+		(at 215.9 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "659789e3-d1d3-4a8e-a98d-538310db84f5")
 	)
 	(junction
 		(at 104.14 76.2)
@@ -2895,6 +2921,12 @@
 		(uuid "8eb65c00-257e-4e6c-8552-5daaf7810633")
 	)
 	(junction
+		(at 215.9 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92b419a1-0540-42dc-9b63-6af67f9b4390")
+	)
+	(junction
 		(at 124.46 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2931,12 +2963,6 @@
 		(uuid "ada41901-20ae-4d2f-b64f-301e75925f61")
 	)
 	(junction
-		(at 215.9 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b33fedec-aa26-4510-aa3c-c4c63dafc798")
-	)
-	(junction
 		(at 212.09 252.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2947,6 +2973,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7eb785d-17d6-4ca8-9e7a-adca96a61a76")
+	)
+	(junction
+		(at 227.33 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1bdd257-210b-4e5d-84d3-af5b2274d0b0")
 	)
 	(junction
 		(at 104.14 68.58)
@@ -3419,16 +3451,6 @@
 		)
 		(uuid "12a694b8-8d96-4c6f-9fb2-2d0c68f6c217")
 	)
-	(wire
-		(pts
-			(xy 215.9 74.93) (xy 224.79 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "144b6c00-18b9-4673-8221-f5b67ae08ee1")
-	)
 	(bus
 		(pts
 			(xy 254 224.79) (xy 254 227.33)
@@ -3501,7 +3523,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 64.77) (xy 250.19 64.77)
+			(xy 215.9 64.77) (xy 227.33 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4312,6 +4334,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 64.77) (xy 250.19 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81b10d77-7915-495a-992f-8a16aa74b829")
+	)
+	(wire
+		(pts
 			(xy 191.77 233.68) (xy 191.77 243.84)
 		)
 		(stroke
@@ -4504,16 +4536,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 74.93) (xy 215.9 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e66c868-6f7d-4a1b-9baf-5551750cb3e8")
-	)
-	(wire
-		(pts
 			(xy 222.25 243.84) (xy 222.25 227.33)
 		)
 		(stroke
@@ -4675,6 +4697,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 74.93) (xy 227.33 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b37927ce-ac33-418e-9bdf-00d15cc35c09")
+	)
+	(wire
+		(pts
 			(xy 93.98 68.58) (xy 83.82 68.58)
 		)
 		(stroke
@@ -4692,6 +4724,16 @@
 			(type default)
 		)
 		(uuid "b48b2d72-d4af-4571-b35b-19b027c52a94")
+	)
+	(wire
+		(pts
+			(xy 227.33 74.93) (xy 228.6 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5103ca3-a3dc-4968-811b-b17d860dc506")
 	)
 	(bus
 		(pts
@@ -4958,7 +5000,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 74.93) (xy 250.19 74.93)
+			(xy 233.68 74.93) (xy 250.19 74.93)
 		)
 		(stroke
 			(width 0)
@@ -6766,7 +6808,7 @@
 	)
 	(symbol
 		(lib_id "Device:NetTie_2")
-		(at 227.33 74.93 0)
+		(at 231.14 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6776,7 +6818,7 @@
 		(dnp no)
 		(uuid "14c0beb7-0697-4dd6-adaf-dfb837dcbc27")
 		(property "Reference" "NT1"
-			(at 227.33 76.454 0)
+			(at 231.14 76.454 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6786,7 +6828,7 @@
 			)
 		)
 		(property "Value" "NetTie_2"
-			(at 227.33 78.994 0)
+			(at 231.14 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6796,7 +6838,7 @@
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad2.0mm"
-			(at 227.33 74.93 0)
+			(at 231.14 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6807,7 +6849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 74.93 0)
+			(at 231.14 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6818,7 +6860,7 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
-			(at 227.33 74.93 0)
+			(at 231.14 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8410,6 +8452,120 @@
 		)
 	)
 	(symbol
+		(lib_id "easyeda_import:ASR-M-3-0.5F")
+		(at 227.33 69.85 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5702dc28-b454-4300-a81c-18f616de82d0")
+		(property "Reference" "R2"
+			(at 229.87 68.5799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.5 6W"
+			(at 229.87 71.1199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "easyeda_import:RES-SMD_L6.3-W3.2_R2512"
+			(at 219.71 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Low-Resistors-Current-Sense-Resistors-Surface-Mount_Shenzhen-Yezhan-Elec-ASR-M-3-0-5F_C469426.html"
+			(at 217.17 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "yezhan(业展)"
+			(at 214.63 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ASR-M-3-0.5F"
+			(at 212.09 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C469426"
+			(at 209.55 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb77e5b6-ae40-40ca-a5da-db70ce93dec7")
+		)
+		(pin "2"
+			(uuid "68e79da3-7893-413e-9802-eba73d605d36")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 104.14 72.39 0)
 		(unit 1)
@@ -8664,121 +8820,6 @@
 			(project "4-in-1_ESC"
 				(path "/885456b2-b92d-459f-a061-5f970a420f96"
 					(reference "GND_BAT03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "easyeda_import:ASR-M-3-0.25F")
-		(at 215.9 69.85 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62b1d969-40a6-444a-82cf-5079f05b876e")
-		(property "Reference" "R1"
-			(at 218.44 68.5799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0.2m 6W SHUNT"
-			(at 218.44 71.1199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "easyeda_import:RES-SMD_L6.3-W3.1-1"
-			(at 223.52 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_Shenzhen-Yezhan-Elec-ASR-M-3-0-25F_C495759.html"
-			(at 226.06 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 215.9 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "yezhan(业展)"
-			(at 228.6 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "ASR-M-3-0.25F"
-			(at 231.14 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C495759"
-			(at 233.68 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3d0f1672-829a-4f80-ab81-fd1cb0fd7e23")
-		)
-		(pin "2"
-			(uuid "4f458e94-3afe-4341-a113-607330bb24cb")
-		)
-		(instances
-			(project "4-in-1_ESC"
-				(path "/885456b2-b92d-459f-a061-5f970a420f96"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -11076,7 +11117,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 215.9 78.74 0)
+		(at 215.9 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11087,7 +11128,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc182617-5eaa-4e40-aa36-c30fcd3217df")
 		(property "Reference" "GND_BAT02"
-			(at 215.9 85.09 0)
+			(at 215.9 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11098,7 +11139,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 83.82 0)
+			(at 215.9 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11108,7 +11149,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 78.74 0)
+			(at 215.9 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11119,7 +11160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 78.74 0)
+			(at 215.9 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11130,7 +11171,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 215.9 78.74 0)
+			(at 215.9 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11147,6 +11188,120 @@
 			(project "4-in-1_ESC"
 				(path "/885456b2-b92d-459f-a061-5f970a420f96"
 					(reference "GND_BAT02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda_import:ASR-M-3-0.5F")
+		(at 215.9 69.85 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dd54fb78-ff81-4826-aa74-a27ea35dc9fc")
+		(property "Reference" "R1"
+			(at 218.44 68.5799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.5 6W"
+			(at 218.44 71.1199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "easyeda_import:RES-SMD_L6.3-W3.2_R2512"
+			(at 208.28 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Low-Resistors-Current-Sense-Resistors-Surface-Mount_Shenzhen-Yezhan-Elec-ASR-M-3-0-5F_C469426.html"
+			(at 205.74 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "yezhan(业展)"
+			(at 203.2 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ASR-M-3-0.5F"
+			(at 200.66 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C469426"
+			(at 198.12 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "291cf3f0-b333-47fa-8822-038674fd75ed")
+		)
+		(pin "2"
+			(uuid "0f90dd41-49b3-4b4a-a518-9d50cf9b1aaf")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96"
+					(reference "R1")
 					(unit 1)
 				)
 			)

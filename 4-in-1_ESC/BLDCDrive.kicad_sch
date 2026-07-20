@@ -2066,7 +2066,7 @@
 				(size 1.27 1.27)
 				(thickness 0.508)
 				(bold yes)
-				(color 255 0 0 1)
+				(color 255 255 255 1)
 			)
 			(justify left)
 		)
@@ -2081,7 +2081,7 @@
 				(size 2.54 2.54)
 				(thickness 0.508)
 				(bold yes)
-				(color 255 0 0 1)
+				(color 255 255 255 1)
 			)
 			(justify left)
 		)
@@ -2108,7 +2108,7 @@
 				(size 2.54 2.54)
 				(thickness 0.508)
 				(bold yes)
-				(color 255 0 0 1)
+				(color 255 255 255 1)
 			)
 			(justify left)
 		)
@@ -16003,111 +16003,6 @@
 		(uuid "e0e1c799-382f-49cb-b04f-915e2ae7ede8")
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 208.28 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00c9ddf1-e1c0-4442-965b-9cd424be7e93")
-		(property "Reference" "C99"
-			(at 210.82 68.5862 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7uF 25V X5R"
-			(at 210.82 71.1262 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 208.28 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 208.28 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_Part_Number" "C2858031"
-			(at 208.28 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "43ab4bff-4843-4896-a359-9535e61c4e3c")
-		)
-		(pin "1"
-			(uuid "c021c217-1a57-47bc-8835-60e9cf6f1e14")
-		)
-		(instances
-			(project "4-in-1_ESC"
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/24433638-03b1-4fac-9fb8-4bfe6ef19744"
-					(reference "C101")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/77df452c-e4f2-43e0-967b-d0520b07b85a"
-					(reference "C100")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/b59eefb5-17fe-40a6-bf35-994f052afcc0"
-					(reference "C99")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/e58120a8-7607-4f33-8e63-95006a082acf"
-					(reference "C102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 76.2 106.68 180)
 		(unit 1)
@@ -17348,6 +17243,111 @@
 				)
 				(path "/885456b2-b92d-459f-a061-5f970a420f96/e58120a8-7607-4f33-8e63-95006a082acf"
 					(reference "R73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 208.28 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a3c33f5-459e-48af-b3db-87a78ac1c323")
+		(property "Reference" "C30"
+			(at 210.82 85.0962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF 25V X5R"
+			(at 210.82 87.6362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric"
+			(at 208.28 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 208.28 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_Part_Number" "C2858031"
+			(at 208.28 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "14e693ce-33e2-49b6-b7fe-b9fe8b5f8b21")
+		)
+		(pin "1"
+			(uuid "c001e8b5-e604-4e78-9b08-59feafea0759")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96/24433638-03b1-4fac-9fb8-4bfe6ef19744"
+					(reference "C38")
+					(unit 1)
+				)
+				(path "/885456b2-b92d-459f-a061-5f970a420f96/77df452c-e4f2-43e0-967b-d0520b07b85a"
+					(reference "C31")
+					(unit 1)
+				)
+				(path "/885456b2-b92d-459f-a061-5f970a420f96/b59eefb5-17fe-40a6-bf35-994f052afcc0"
+					(reference "C30")
+					(unit 1)
+				)
+				(path "/885456b2-b92d-459f-a061-5f970a420f96/e58120a8-7607-4f33-8e63-95006a082acf"
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -18676,7 +18676,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric"
 			(at 208.28 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -18832,111 +18832,6 @@
 				)
 				(path "/885456b2-b92d-459f-a061-5f970a420f96/e58120a8-7607-4f33-8e63-95006a082acf"
 					(reference "GND026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 208.28 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "69661011-13b7-40b0-a8a1-774de9d02ffc")
-		(property "Reference" "C53"
-			(at 210.82 85.0962 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7uF 25V X5R"
-			(at 210.82 87.6362 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 208.28 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 208.28 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_Part_Number" "C2858031"
-			(at 208.28 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1d819896-1a71-44bb-8c2a-7df33baa27dc")
-		)
-		(pin "1"
-			(uuid "1e371e79-1c32-4a61-93e7-d7342ea3230f")
-		)
-		(instances
-			(project "4-in-1_ESC"
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/24433638-03b1-4fac-9fb8-4bfe6ef19744"
-					(reference "C97")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/77df452c-e4f2-43e0-967b-d0520b07b85a"
-					(reference "C96")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/b59eefb5-17fe-40a6-bf35-994f052afcc0"
-					(reference "C53")
-					(unit 1)
-				)
-				(path "/885456b2-b92d-459f-a061-5f970a420f96/e58120a8-7607-4f33-8e63-95006a082acf"
-					(reference "C98")
 					(unit 1)
 				)
 			)
@@ -19413,6 +19308,111 @@
 				)
 				(path "/885456b2-b92d-459f-a061-5f970a420f96/e58120a8-7607-4f33-8e63-95006a082acf"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 208.28 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "820d684f-931d-4e8f-b418-3b89a2d3b19c")
+		(property "Reference" "C29"
+			(at 210.82 68.5862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF 25V X5R"
+			(at 210.82 71.1262 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric"
+			(at 208.28 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 208.28 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_Part_Number" "C2858031"
+			(at 208.28 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ee4234ba-1046-47b5-9d72-1093e2267bd3")
+		)
+		(pin "1"
+			(uuid "967d1ddb-8177-42e7-a296-a1d1287dcff3")
+		)
+		(instances
+			(project "4-in-1_ESC"
+				(path "/885456b2-b92d-459f-a061-5f970a420f96/24433638-03b1-4fac-9fb8-4bfe6ef19744"
+					(reference "C45")
+					(unit 1)
+				)
+				(path "/885456b2-b92d-459f-a061-5f970a420f96/77df452c-e4f2-43e0-967b-d0520b07b85a"
+					(reference "C37")
+					(unit 1)
+				)
+				(path "/885456b2-b92d-459f-a061-5f970a420f96/b59eefb5-17fe-40a6-bf35-994f052afcc0"
+					(reference "C29")
+					(unit 1)
+				)
+				(path "/885456b2-b92d-459f-a061-5f970a420f96/e58120a8-7607-4f33-8e63-95006a082acf"
+					(reference "C53")
 					(unit 1)
 				)
 			)
